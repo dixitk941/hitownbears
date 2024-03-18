@@ -11,22 +11,22 @@ body {
 }
 
 
-/* Header */ 
+/* Header */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
     background-color: white;
     transition: all 0.3s ease;
-}
-.header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000; /* Adjust z-index as needed */
 }
+
 
 
 .logo {
@@ -62,9 +62,39 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width: 600px)
+{
+   .logo img {
+       width: 50px;
+       height: 50px;
+     }
+
+     .logo1 img {
+       width: 40px;
+       height: 40px;
+       border-radius: 30%;
+     }
+
+     body {
+        padding-top: 30px; /* Adjust as needed */
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .header__nav li,
+    .header__nav-icons li {
+        margin-right: 10px; /* Reduce margin for better spacing */
+    }
+}
+     
+ 
 .header__nav li,
 .header__nav-icons li {
     margin-right: 20px;
+    margin: 0%;
+    padding: 0%;
 }
 
 /* Dropdown menu */
@@ -203,12 +233,13 @@ body {
     color: #333;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments 
 @media only screen and (max-width: 768px) {
     .header {
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        margin-top: 0px;
     }
 
     .header__left,
@@ -221,7 +252,8 @@ body {
     .header__nav {
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: auto;
+        margin-top: auto    ;
     }
 
     .header__nav a {
@@ -289,7 +321,7 @@ body {
     .header__nav a:hover {
         transform: translateY(-3px);
     }
-}
+}*/
 
 /* Additional styling for shirt-page */
 .product-bar {
@@ -408,4 +440,12 @@ body {
     background-color: #333;
     color: #fff;
 }
+@media only screen and (max-width: 600px) {
 
+    .header{
+        position: relative;
+    }
+    .body{
+        padding: auto;
+    }
+}
