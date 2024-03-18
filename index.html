@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Navigation</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__left">   
+         <div class="logo">
+        <a href="./index.html">
+  
+        <img src="pics/logo.png"></a></div>
+    </div>
+    <div class="header__center">
+        <nav class="header__nav">
+            <ul>
+                <li><a href="shirt.html">Shirts</a></li>
+                <li><a href="t-shirt.html">T-Shirts</a></li>
+                <li><a href="lower.html">Lower</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header__right">
+        <nav class="header__nav-icons">
+            <ul>
+                <li><a href="#"><i class="bi bi-search"></i></a></li>
+                <li><a href="account.html"><i class="bi bi-person"></i></a></li>
+                <li class="dropdown">
+                    <a href="cart.html" class="cart-icon dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-cart"></i></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <!-- Cart items will be dynamically populated here -->
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="w3-display-container w3-container">
+    <img src="pics/jeans.jpg" alt="Shirt" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 class="w3-hide-small">COLLECTION 2024</h1>
+      <p><a href="#shirt" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+  <section class="top-choices" id="shirt">
+    <div class="item">
+        <a href="#">
+            <img src="pics/skybluecheckfront.png" alt="Black Canvas Bag">
+        </a>
+        <div class="item-info">
+            <h3>Black Canvas Bag</h3>
+            <p class="price">739.90</p>
+        </div>
+
+        
+    </div>
+    <div class="item">
+        <div class="item-info">
+            <h3>Sweaters for Her</h3>
+            <p class="price">739.90</p>
+        </div>
+        <a href="#">
+            <img src="pics/m-zb2-m-mens-lower-original-imag7egr22pvgngc.webp" alt="Sweaters for Her">
+        </a>
+    </div>
+    <div class="item">
+        <a href="#">
+            <img src="pics/5c4f6e0e335a59340a023553a95c9d1b.jpg" alt="Black Canvas Bag">
+        </a>
+        <div class="item-info">
+            <h3>Black Canvas Bag</h3>
+            <p class="price">739.90</p>
+        </div>
+
+        
+    </div>
+    
+    <!-- Add more items as needed -->
+</section>
+
+<section class="recently-visited">
+    <!-- Recently visited products will be dynamically added here -->
+</section>
+
+<section class="shipping-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="info-item">
+                    <i class="bi bi-truck"></i>
+                    <h4>FREE SHIPPING & RETURN</h4>
+                    <p>Free Shipping over <div class="price">999</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-item">
+                    <i class="price"></i>
+                    <h4>MONEY BACK GUARANTEE</h4>
+                    <p>15 Days Money Back Guarantee</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-item">
+                    <i class="bi bi-telephone"></i>
+                    <h4>24/7 AVAILABLE SUPPORT</h4>
+                    <p>9528202892</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr class="divider">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <!-- SELL section -->
+            <section class="sell-section">
+                <h2>SELL</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <!-- Social links icons -->
+                <div class="social-links">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/hitownbearsofficial/"><i class="bi bi-instagram"></i></a>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-4">
+            <!-- Navigation bar -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">For Women</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">For Men</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Stores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Our Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-4">
+            <!-- DAILY OFFERS & DISCOUNTS section -->
+            <section class="daily-offers">
+                <h2>DAILY OFFERS & DISCOUNTS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+                <!-- Email subscription form -->
+                <form class="email-subscribe">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email Address" aria-label="Your Email Address" aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>© 2024 dixitk941. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline text-md-end">
+                    <li class="list-inline-item"><i class="bi bi-credit-card"></i></li>
+                    <li class="list-inline-item"><i class="bi bi-google"></i></li>
+                    <li class="list-inline-item"><i class="bi bi-wallet2"></i></li>
+                    <!-- Add more icons as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Rest of your HTML content -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="server.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.logo1 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .search-bar input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .search-bar button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navigation ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+  }
+  
+  .navigation ul li a:hover:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    animation: underline 0.3s forwards;
+  }
+  
+  @keyframes underline {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Dropdown Styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown-content a i {
+    margin-right: 10px;
+  }
+  /* Shop Menu Styles */
+  .shop-menu {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .category a {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .category a:hover {
+    transform: scale(1.1);
+  }
+  
+.slideshow-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+#hero {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+#hero h1 {
+    font-size: 36px;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.about-content {
+    max-width: 1200px;
+    text-align: center;
+}
+
+.about-paragraphs {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.left-paragraph, .right-paragraph {
+    flex: 1;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-paragraph:hover, .right-paragraph:hover {
+    transform: scale(1.05);
+}
+
+#services {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+#services h2 {
+    font-size: 28px;
+}
+
+#services ul {
+    list-style: none;
+}
+
+#services li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    font-size: 28px;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+    display: block;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+#contact textarea {
+    height: 120px;
+}
+
+#contact button {
+    background-color: #009688;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: black;
+    margin-top: auto;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.login-options {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#otp-verification {
+    margin-top: 20px;
+}
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo1 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav li {
+        margin-right: 10px;
+    }
+
+    .left-paragraph, .right-paragraph {
+        padding: 10px;
+    }
+
+    #hero h1 {
+        font-size: 24px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    #services h2 {
+        font-size: 24px;
+    }
+
+    #services li {
+        font-size: 16px;
+    }
+
+    #contact h2 {
+        font-size: 24px;
+    }
+
+    #contact label {
+        font-size: 16px;
+    }
+
+    #contact input,
+    #contact textarea,
+    #contact button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .login-options {
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
